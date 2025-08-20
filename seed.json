@@ -1,0 +1,28 @@
+{
+  "products": {
+    "uniq-tee": {
+      "slug": "uniq-tee",
+      "title": "Uniq Tee",
+      "price": 19.99,
+      "image": "https://picsum.photos/seed/tee/800/800",
+      "description": "A clean cotton tee",
+      "category": "tops"
+    },
+    "cozy-hoodie": {
+      "slug": "cozy-hoodie",
+      "title": "Cozy Hoodie",
+      "price": 49.9,
+      "image": "https://picsum.photos/seed/hood/800/800",
+      "description": "Fleece hoodie",
+      "category": "outerwear"
+    },
+    "denim-jeans": {
+      "slug": "denim-jeans",
+      "title": "Denim Jeans",
+      "price": 59.0,
+      "image": "https://picsum.photos/seed/jeans/800/800",
+      "description": "Classic fit",
+      "category": "bottoms"
+    }
+  }
+}
