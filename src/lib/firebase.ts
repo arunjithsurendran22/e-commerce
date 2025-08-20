@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDrBghMPi32ksX1iY7zpTD9G74vQeRhpdo",
-  authDomain: "my-next-shop-1a9bb.firebaseapp.com",
-  projectId: "my-next-shop-1a9bb",
-  storageBucket: "my-next-shop-1a9bb.appspot.com", // fixed: must be *.appspot.com
-  messagingSenderId: "860829645335",
-  appId: "1:860829645335:web:f8e7116034da6b8a11ba52",
-  measurementId: "G-E48ZJW7938", // optional
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY!,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN!,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID!,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET!,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID!,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID!,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID!,
 };
 
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
